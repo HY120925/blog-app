@@ -1,0 +1,9 @@
+<h2>Edit Post</h2>
+
+<form action="/posts/<%= post.id %>?_method=PUT" method="POST" class="post-form">
+  <input type="text" name="title" value="<%= post.title %>" required />
+  <textarea name="content" rows="5" required><%= post.content %></textarea>
+  <button type="submit">👌 Save Changes</button>
+</form>
+
+<a href="/">to Home</a>
